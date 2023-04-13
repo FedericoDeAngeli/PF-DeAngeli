@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cuerpo del sitio */
+main {
+    background-color: rgb(255, 185, 235);
+}
+
+/* Encabezado */
+header {
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+}
+
+h1 {
+    font-size: 48px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+nav {
+    text-align: right;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.otras-paginas li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+
+}
+
+.separador {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Texto en general */
+article {
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+}
+
+/* Texto sobre la misión */
+.mision-titulo {
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.mision {
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    padding-bottom: 20px;
+
+}
+
+main .index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+/* Artículo principal */
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulo-principal {
+    width: 50vw;
+}
+
+.utero {
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
+
+}
+
+/* Ultimas noticias */
+.ultimas-noticias {
+    width: 40vw;
+    padding-top: 100px;
+
+}
+
+/* Sección recetas Index */
+.receta-encabezado {
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 20px
+}
+
+/* Video y mapa */
+.cym {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+}
+
+.mapa {
+    width: 40vw;
+}
+
+.conferencia {
+    width: 40vw;
+}
+
+/* pagina conferencia */
+.conferencias-pag {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+/* pagina recetas */
+.recetas-pag {
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+}
+
+.recetas-pag h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.comida-saludable {
+    width: 500px;
+    height: 300px;
+}
+
+.humus {
+    padding: 50px;
+    border-bottom: rgba(255, 20, 216, 0.445) 2px solid;
+
+}
+
+.humus h3 {
+    text-decoration: underline;
+}
+
+.pasoapaso {
+    padding-top: 50px;
+}
+
+.sopa {
+    padding: 50px;
+}
+
+.sopa h3 {
+    text-decoration: underline;
+}
+
+/* Pagina centros */
+.centros {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+}
+
+.formulario {
+    padding: 2px;
+}
+
+.formulario label {
+    display: block;
+    padding: 5px;
+}
+
+.button {
+    margin: 20px;
+    padding: 7px;
+    border-radius: 7px;
+
+
+}
+
+/* Footer */
+footer {
+    background-color: rgb(248, 109, 183);
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center
+}
+
+.suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

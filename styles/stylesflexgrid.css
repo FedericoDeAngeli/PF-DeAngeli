@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generales */
+
+
+/* Encabezado */
+header {
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Main */
+main {
+    background-color: rgb(255, 185, 235);
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(248, 109, 183);
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+/* 400px */
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.otras-paginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.separador {
+    display: none;
+}
+
+main {
+    padding: 1em;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.utero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 50%;
+    min-height: 150px;
+    height: 50%;
+}
+
+.principal {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ultimas-noticias h3 {
+    padding: 1em;
+    text-align: center;
+}
+
+.receta-encabezado {
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    padding: 1em;
+}
+
+.conferencia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.mapa {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+@media (min-width: 1201px) {
+
+    /* Header 1200px */
+    header {
+        background-color: blueviolet;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        grid-row: 1/3;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        justify-items: center;
+    }
+
+    .navegador {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .otras-paginas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 1em;
+    }
+
+    .otras-paginas li a {
+        color: whitesmoke;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: end;
+        font-size: 1.25rem;
+    }
+
+    .articulo-principal {
+        padding: 1em;
+    }
+
+    .ultimas-noticias {
+        border-left: 0.2em solid blueviolet;
+        padding: 1em;
+    }
+
+    footer {
+        background-color: blueviolet;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer li a {
+        color: whitesmoke;
+    }
+
+    .suscripcion {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center
+        
+    }
+
+    .button:hover{
+        background-color: gold;
+    }
+
+    .principal {
+        padding-top: 75px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .cym {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
