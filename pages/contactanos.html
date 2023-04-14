@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylesflexgrid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
     <title>Contactanos</title>
 </head>
 
@@ -13,7 +17,7 @@
     <header>
 
         <h1>Síndrome de Ovario Poliquístico</h1>
-        <nav>
+        <nav class="navegador">
             <ul class="otras-paginas">
                 <li><span class="separador">|</span><a href="../index.html">Home</a></li>
                 <li><span class="separador">|</span><a href="./recetas.html">Recetas</a></li>
@@ -23,30 +27,30 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contactanos__main">
         <h2>Página de contacto</h2>
         <h3>Dejanos tus datos y tu consulta a continuación</h3>
         <h4>Nuestro grupo de expertos te responderá a la brevedad</h4>
         <form action="" class="formulario">
-            <div>
+            <div class="formulario__label">
                 <label for="nombre">Nombre y apellido</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
             </div>
-            <div>
+            <div class="formulario__label">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Email">
             </div>
-            <div>
+            <div class="formulario__label">
                 <label for="celular">Teléfono de contacto</label>
-                <input type="tel" id="celular" name="celular">
+                <input type="tel" id="celular" name="celular" placeholder="Teléfono">
             </div>
-            <div>
+            <div class="formulario__label">
                 <label for="texto">Escribinos tu consulta</label>
-                <textarea name="texto" id="texto" cols="50" rows="20"></textarea>
+                <textarea name="texto" id="texto" cols="50" rows="20" placeholder="Escribinos tu consulta"></textarea>
             </div>
-            <div>
+            <div class="formulario__label">
                 <label for="submit"></label>
-                <input type="submit" id="submit" value="Enviar" name="button">
+                <input type="submit" id="submit" value="Enviar" name="button" class="button">
             </div>
         </form>
     </main>
@@ -60,10 +64,8 @@
         <form action="email" class="suscripcion">
             <label for="email">Suscribite con tu mail</label>
             <input type="email" id="email">
-            <div>
-                <label for="submit" class="button"></label>
-                <input type="submit" id="submit" value="Enviar" name="button">
-            </div>
+            <label for="submit" class="button"></label>
+            <input type="submit" id="submit" value="Enviar" name="button" class="button">
         </form>
 
     </footer>

@@ -20,6 +20,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 
 }
 
@@ -40,8 +41,10 @@ footer {
     font-size: 1rem;
 }
 
-/* 400px */
+
+
 /* Header */
+
 h1 {
     text-align: center;
     font-size: 1.5rem;
@@ -81,6 +84,66 @@ h2 {
     height: 50%;
 }
 
+/* Pagina receta */
+.comida-saludable{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 50%;
+    min-height: 150px;
+    height: 50%;
+}
+
+.humus{
+    background-color: whitesmoke;
+    padding: 1em;
+    border: solid 0.2em blueviolet;
+}
+.sopa{
+    background-color: whitesmoke;
+    padding: 1em;
+    border: solid 0.2em blueviolet;
+}
+
+/* Pagina contacto */
+.contactanos__main{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.formulario input{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+.formulario textarea{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+/* Pagina centros */
+.centros-gineco{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 1em; 
+}
+
+/* 400px */
+
+@media (max-width: 1200px){
 .principal {
     padding: 1em;
     display: flex;
@@ -115,6 +178,31 @@ h2 {
     align-items: center;
 }
 
+/* Pagina conferencias */
+.conferencias__generales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;   
+}
+.conferencias__generales h3{
+    font-size: 1.5rem;
+    padding-top: 1em;
+}
+
+.conferencias__generales p{
+    display: none;
+}
+
+
+
+/* Contactanos Responsive */
+.formulario label{
+    display: none;
+}
+
+
+}
 
 @media (min-width: 1201px) {
 
@@ -189,9 +277,14 @@ h2 {
         align-items: center
         
     }
-
+    .button{
+        background-color: red;
+        color: white;
+    }
     .button:hover{
-        background-color: gold;
+        background-color: blue;
+        color: gold;
+        border-radius: 0.5em;
     }
 
     .principal {
@@ -203,6 +296,44 @@ h2 {
     .cym {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
+/* Pagina conferencias */
+.conferencias__generales h3{
+    font-size: 1.5rem;
+    padding-top: 1em;
+}
+.conferencias__video{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.conferencias__video p{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Contactanos 1200px */
+.contactanos__main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formulario__label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formulario input{
+    color: white;
+}
+.formulario textarea{
+    color:white
+}
 
 }
