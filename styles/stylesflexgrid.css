@@ -180,20 +180,25 @@ h2 {
 
 /* Pagina conferencias */
 .conferencias__generales{
-    display: flex;
+       display: flex;
     flex-direction: column;
     flex-wrap: wrap; 
-    align-items: center;   
+    align-items: center;
+    
 }
+.conferencias__video figure{
+    width: 200%;
+}
+
 .conferencias__generales h3{
     font-size: 1.5rem;
     padding-top: 1em;
+    text-align: center;
 }
 
 .conferencias__generales p{
     display: none;
 }
-
 
 
 /* Contactanos Responsive */
