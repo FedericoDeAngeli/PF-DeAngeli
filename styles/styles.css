@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Cuerpo del sitio */
-main {
-    background-color: rgb(255, 185, 235);
-}
+/* Generales */
+
 
 /* Encabezado */
 header {
@@ -15,234 +14,21 @@ header {
     border-color: rgba(255, 20, 216, 0.445);
 }
 
-h1 {
-    font-size: 48px;
-    text-align: left;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    padding-bottom: 20px;
-}
-
-nav {
-    text-align: right;
-    font-size: 24px;
-}
-
 ul {
     list-style: none;
-
-}
-
-.otras-paginas li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-
-
-
-}
-
-.separador {
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 a {
     text-decoration: none;
+    color: black;
 
 }
 
-/* Texto en general */
-article {
+/* Main */
+main {
+    background-color: rgb(255, 185, 235);
     text-align: justify;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 100;
-    font-size: 1.25rem;
-    letter-spacing: 0.75px;
-    line-height: 25px;
-}
-
-/* Texto sobre la misión */
-.mision-titulo {
-    text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    text-decoration: underline;
-    padding-bottom: 10px;
-}
-
-.mision {
-    text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    letter-spacing: 0.75px;
-    line-height: 25px;
-    padding-bottom: 20px;
-
-}
-
-main .index {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-/* Artículo principal */
-.principal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articulo-principal {
-    width: 50vw;
-}
-
-.utero {
-    width: 500px;
-    height: 500px;
-    padding-top: 100px;
-
-}
-
-/* Ultimas noticias */
-.ultimas-noticias {
-    width: 40vw;
-    padding-top: 100px;
-
-}
-
-/* Sección recetas Index */
-.receta-encabezado {
-    background-color: beige;
-    border-style: solid;
-    border-color: rgba(255, 20, 216, 0.445);
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    text-decoration: underline;
-    padding: 20px
-}
-
-/* Video y mapa */
-.cym {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: underline;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: beige;
-    border-style: solid;
-    border-color: rgba(255, 20, 216, 0.445);
-}
-
-.mapa {
-    width: 40vw;
-}
-
-.conferencia {
-    width: 40vw;
-}
-
-/* pagina conferencia */
-.conferencias-pag {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
-/* pagina recetas */
-.recetas-pag {
-    text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 100;
-    font-size: 1.25rem;
-    letter-spacing: 0.75px;
-    line-height: 25px;
-}
-
-.recetas-pag h2 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.comida-saludable {
-    width: 500px;
-    height: 300px;
-}
-
-.humus {
-    padding: 50px;
-    border-bottom: rgba(255, 20, 216, 0.445) 2px solid;
-
-}
-
-.humus h3 {
-    text-decoration: underline;
-}
-
-.pasoapaso {
-    padding-top: 50px;
-}
-
-.sopa {
-    padding: 50px;
-}
-
-.sopa h3 {
-    text-decoration: underline;
-}
-
-/* Pagina centros */
-.centros {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: underline;
-
-}
-
-.formulario {
-    padding: 2px;
-}
-
-.formulario label {
-    display: block;
-    padding: 5px;
-}
-
-.button {
-    margin: 20px;
-    padding: 7px;
-    border-radius: 7px;
-
-
 }
 
 /* Footer */
@@ -253,15 +39,306 @@ footer {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 100;
     font-size: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center
 }
 
-.suscripcion {
+
+
+/* Header */
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navegador__lista{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
+    padding: 0.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.separador {
+    display: none;
+}
+
+main {
+    padding: 1em;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.utero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 50%;
+    min-height: 150px;
+    height: 50%;
+}
+
+.recetas__encabezado{
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    padding: 1em;
+}
+
+
+/* Pagina receta */
+.comida-saludable{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 50%;
+    min-height: 150px;
+    height: 50%;
+}
+
+.humus{
+    background-color: whitesmoke;
+    padding: 1em;
+    border: solid 0.2em blueviolet;
+}
+.sopa{
+    background-color: whitesmoke;
+    padding: 1em;
+    border: solid 0.2em blueviolet;
+}
+
+/* Pagina contacto */
+.contactanos__main{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.formulario input{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+.formulario textarea{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+/* Pagina centros */
+.centros-gineco{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+/* 400px */
+
+@media (max-width: 1200px){
+.noticias{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticias__ultimas h3 {
+    padding: 1em;
+    text-align: center;
+}
+
+
+.insertos__conferencia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.insertos__mapa {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Pagina conferencias */
+.conferencias__generales{
+       display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+.conferencias__generales h3{
+    font-size: 1.5rem;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.conferencias__generales p{
+    display: none;
+}
+
+
+/* Contactanos Responsive */
+.formulario label{
+    display: none;
+}
+
+
+}
+
+@media (min-width: 1201px) {
+
+    /* Header 1200px */
+    header {
+        background-color: blueviolet;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        grid-row: 1/3;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        justify-items: center;
+    }
+
+    .navegador {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .navegador__lista{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 1em;
+    }
+
+    .navegador__lista li a {
+        color: whitesmoke;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: end;
+        font-size: 1.25rem;
+    }
+
+    .noticias__principal {
+        padding: 1em;
+    }
+
+    .noticias__ultimas {
+        border-left: 0.2em solid blueviolet;
+        padding: 1em;
+    }
+
+    footer {
+        background-color: blueviolet;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer li a {
+        color: whitesmoke;
+    }
+
+    .suscripcion {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center
+
+    }
+    .button{
+        background-color: red;
+        color: white;
+    }
+    .button:hover{
+        background-color: blue;
+        color: gold;
+        border-radius: 0.5em;
+    }
+
+    .noticias {
+        padding-top: 75px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .insertos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+/* Pagina conferencias */
+.conferencias__generales h3{
+    font-size: 1.5rem;
+    padding-top: 1em;
+}
+.conferencias__video{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.conferencias__video p{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Contactanos 1200px */
+.contactanos__main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formulario__label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formulario input{
+    color: white;
+}
+.formulario textarea{
+    color:white
+}
+
 }
