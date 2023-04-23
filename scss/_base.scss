@@ -1,0 +1,14 @@
+$color-body: rgba(252, 168, 182, 0.637);
+$fuente-principal: 'Ubuntu', sans-serif;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-body;
+}

@@ -1,0 +1,24 @@
+.contactanos__main{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+
+ input{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+
+ textarea{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
+}
+}

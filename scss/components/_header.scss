@@ -1,0 +1,18 @@
+header {
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(255, 20, 216, 0.445);
+
+    h1 {
+        font-family: $fuente-principal;
+        font-size: 2rem;
+        color: black;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+}
