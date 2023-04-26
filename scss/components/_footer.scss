@@ -6,3 +6,36 @@ footer {
     font-weight: 100;
     font-size: 1rem;
 }
+
+@media(min-width: 1201px) {
+    footer {
+        background-color: blueviolet;
+        color: $color-fuente-alternativo;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        li a {
+            color: $color-fuente-alternativo;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center
+        }
+
+        .button {
+            background-color: red;
+            color: white;
+
+            &:hover {
+                background-color: blue;
+                color: gold;
+                border-radius: 0.5em;
+            }
+        }
+
+    }
+}

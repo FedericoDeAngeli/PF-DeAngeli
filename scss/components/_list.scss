@@ -1,11 +1,19 @@
+
+
 ul{
     font-size: 1rem;
     padding: 0.5em;
     font-family: $fuente-principal;
     list-style: none;
 
+    :hover{
+        transform:scale(1.5);
+        transition-duration: .75s;
+    }
     & a {
         text-decoration: none;
         color: black;
+
+     
     }
 }

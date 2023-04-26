@@ -1,18 +1,56 @@
 header {
-    background-color: beige;
-    border-style: solid;
-    border-color: rgba(255, 20, 216, 0.445);
+   background-color: beige;
+   border-style: solid;
+   border-color: rgba(255, 20, 216, 0.445);
+   animation-name: header-color;
+   animation-duration: 5s;
+   animation-iteration-count: 2;
+   
 
-    h1 {
-        font-family: $fuente-principal;
-        font-size: 2rem;
-        color: black;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-    }
+   nav ul{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5em;
+    font-family: $fuente-principal;
+   }
 }
+
+
+@media(min-width:1201px) {
+   header {
+      background-color: blueviolet;
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-content: center;
+      align-items: center;
+
+      h1 {
+         grid-row: 1/3;
+         color: $color-fuente-alternativo;
+      }
+
+      nav {
+         grid-column: 2/3;
+         grid-row: 2/3;
+
+         ul {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 1em;
+
+            li a {
+               color: whitesmoke;
+               font-family: 'Ubuntu', sans-serif;
+               text-align: end;
+               font-size: 1.25rem;
+            }
+         }
+      }
+   }
+
+}
+

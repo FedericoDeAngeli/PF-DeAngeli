@@ -1,0 +1,23 @@
+@media(min-width:1201px) {
+
+    .noticias {
+        padding-top: 75px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+
+        &__principal {
+            padding: 1em;
+        }
+
+        &__ultimas {
+            border-left: solid 0.2em blueviolet;
+            padding: 1em;
+        }
+    }
+
+    .insertos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

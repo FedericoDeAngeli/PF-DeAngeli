@@ -5,18 +5,24 @@
     border-style: solid;
     border-color: rgba(255, 20, 216, 0.445);
     text-align: center;
-    font-family: $fuente-principal;
-    font-size: 1.25rem;
     padding: 1em;
 }
 
-main {
+.noticias{
     padding: 1em;
-    font-size: 1rem;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h2 {
-    font-size: 1.25rem;
-    text-align: center;
+.insertos__conferencia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.insertos__mapa {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }

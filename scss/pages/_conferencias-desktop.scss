@@ -1,0 +1,16 @@
+@media(min-width:1201px) {
+
+
+.conferencias__video{
+    display: flex;
+    align-items: center;
+    gap:100px;
+    background-color: lightpink;
+
+    p{
+        display:block;
+        text-align: justify;
+        font-family: $fuente-principal;
+    }
+}
+}

@@ -8,27 +8,92 @@ body {
   background-color: rgba(252, 168, 182, 0.637);
 }
 
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+h1 :hover {
+  transform: scale(10);
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  padding: 1em;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1em;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1em;
+}
+
 header {
   background-color: beige;
   border-style: solid;
   border-color: rgba(255, 20, 216, 0.445);
-}
-header h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
-  color: black;
+  animation-name: header-color;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
 }
 header nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
+  padding: 0.5em;
+  font-family: "Ubuntu", sans-serif;
 }
 
+@media (min-width: 1201px) {
+  header {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+  }
+  header h1 {
+    grid-row: 1/3;
+    color: whitesmoke;
+  }
+  header nav {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  header nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1em;
+  }
+  header nav ul li a {
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    text-align: end;
+    font-size: 1.25rem;
+  }
+}
 ul {
   font-size: 1rem;
   padding: 0.5em;
   font-family: "Ubuntu", sans-serif;
   list-style: none;
+}
+ul :hover {
+  transform: scale(1.5);
+  transition-duration: 0.75s;
 }
 ul a {
   text-decoration: none;
@@ -44,6 +109,33 @@ footer {
   font-size: 1rem;
 }
 
+@media (min-width: 1201px) {
+  footer {
+    background-color: blueviolet;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer li a {
+    color: whitesmoke;
+  }
+  footer form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  footer .button {
+    background-color: red;
+    color: white;
+  }
+  footer .button:hover {
+    background-color: blue;
+    color: gold;
+    border-radius: 0.5em;
+  }
+}
 img {
   display: block;
   margin-left: auto;
@@ -54,27 +146,63 @@ img {
   height: 50%;
 }
 
+@keyframes header-color {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
 .recetas__encabezado {
   background-color: beige;
   border-style: solid;
   border-color: rgba(255, 20, 216, 0.445);
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.25rem;
   padding: 1em;
 }
 
-main {
+.noticias {
   padding: 1em;
-  font-size: 1rem;
-  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-h2 {
-  font-size: 1.25rem;
-  text-align: center;
+.insertos__conferencia {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
+.insertos__mapa {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+@media (min-width: 1201px) {
+  .noticias {
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .noticias__principal {
+    padding: 1em;
+  }
+  .noticias__ultimas {
+    border-left: solid 0.2em blueviolet;
+    padding: 1em;
+  }
+  .insertos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
 .contactanos__main {
   text-align: center;
 }
@@ -83,7 +211,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
   gap: 0.5em;
 }
 .formulario input {
@@ -95,6 +222,94 @@ h2 {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
+}
+.formulario label {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .contactanos__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .formulario label {
+    display: inline;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .formulario__label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .formulario input {
+    color: white;
+  }
+  .formulario textarea {
+    color: white;
+  }
+  .formulario__label__button {
+    background-color: blueviolet;
+  }
+}
+.conferencias__generales {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.conferencias__video p {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .conferencias__video {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: lightpink;
+  }
+  .conferencias__video p {
+    display: block;
+    text-align: justify;
+    font-family: "Ubuntu", sans-serif;
+  }
+}
+.comida-saludable {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 150px;
+  width: 50%;
+  min-height: 150px;
+  height: 50%;
+}
+
+.humus {
+  background-color: whitesmoke;
+  padding: 1em;
+  border: solid 0.2em blueviolet;
+}
+
+.sopa {
+  background-color: whitesmoke;
+  padding: 1em;
+  border: solid 0.2em blueviolet;
+}
+
+.centros-gineco {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
