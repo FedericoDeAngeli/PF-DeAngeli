@@ -1,3 +1,4 @@
+// Formato header - Mobile
 header {
    background-color: beige;
    border-style: solid;
@@ -6,7 +7,6 @@ header {
    animation-duration: 5s;
    animation-iteration-count: 2;
    
-
    nav ul{
       display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ header {
    }
 }
 
-
+// Formato Header - Desktop
 @media(min-width:1201px) {
    header {
       background-color: blueviolet;

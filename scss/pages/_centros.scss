@@ -1,7 +1,29 @@
-.centros-gineco{
+// Pagina Centros - Mobile
+.centros-gineco {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1em;
+
+    p {
+        display: none;
+    }
+}
+
+// Pagina Centros - Desktop
+@media(min-width:1201px) {
+
+
+    .centros-gineco__contenido {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        background-color: lightpink;
+
+        p {
+            display: block;
+            text-align: justify;
+            font-family: $fuente-principal;
+        }
+    }
 }

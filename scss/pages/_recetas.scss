@@ -1,20 +1,91 @@
-.comida-saludable{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 150px;
-    width: 50%;
-    min-height: 150px;
-    height: 50%;
+// Sección recetas - Mobile first
+
+.flip-card {
+    padding-top: 2em;
+
+    &__tarjeta {
+        background-image: url(/img/comida\ sana.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+        &__frente {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        &__fondo {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
 }
 
-.humus{
-    background-color: whitesmoke;
-    padding: 1em;
-    border: solid 0.2em blueviolet;
-}
-.sopa{
-    background-color: whitesmoke;
-    padding: 1em;
-    border: solid 0.2em blueviolet;
+// Sección recetas - Desktop
+
+@media(min-width:1201px) {
+    .recetas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+
+    }
+
+    .flip-card {
+
+        width: 400px;
+        height: 400px;
+
+        &:hover &__tarjeta {
+            transform: rotateY(180deg);
+        }
+
+        &__tarjeta {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: justify;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+
+            &__frente,
+            &__fondo {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                font-size: 5rem;
+
+            }
+
+            &__frente {
+                background-image: url("/img/comida\ sana.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+
+
+                h3 {
+                    font-weight: bold;
+
+
+                }
+            }
+
+            &__fondo {
+                background-color: whitesmoke;
+                color: black;
+                transform: rotateY(180deg);
+                border: solid 0.05em blueviolet;
+
+            }
+        }
+    }
 }

@@ -1,17 +1,19 @@
+// Variables
+
 $color-body: rgba(252, 168, 182, 0.637);
 $color-fuente-principal: black;
 $color-fuente-alternativo: whitesmoke;
 $fuente-principal: 'Ubuntu', sans-serif;
 
+// Estilos base
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: $color-body;
 }
 
@@ -21,27 +23,30 @@ h1 {
     font-size: 2rem;
     color: black;
     text-align: center;
-
-    :hover{
-       transform: scale(10);
-    }
 }
 
 h2 {
-        font-size: 1.25rem;
-        text-align: center;
-        font-family: $fuente-principal;
-        padding: 1em;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: $fuente-principal;
+    padding: 1em;
 }
 
-h3{
-font-family: $fuente-principal;
-font-size: 1rem;
-text-align: center;
-padding: 1em;
+h3 {
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1em;
 }
 
-p{
+h4 {
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1em;
+}
+
+p {
     font-family: $fuente-principal;
     font-size: 1rem;
     text-align: justify;

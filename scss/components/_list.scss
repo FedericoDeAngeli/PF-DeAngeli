@@ -1,19 +1,25 @@
+// Formatos Listas
 
-
-ul{
+ul {
     font-size: 1rem;
     padding: 0.5em;
     font-family: $fuente-principal;
     list-style: none;
 
-    :hover{
-        transform:scale(1.5);
-        transition-duration: .75s;
-    }
     & a {
         text-decoration: none;
         color: black;
-
-     
     }
+}
+
+ol {
+    font-size: 1rem;
+    padding: 1em;
+    font-family: $fuente-principal;
+    margin: 0px;
+}
+
+.navegador__lista li:hover {
+    transform: scale(1.5);
+    transition-duration: .75s;
 }

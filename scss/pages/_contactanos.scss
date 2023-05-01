@@ -1,3 +1,5 @@
+// Pagina contactos - Mobile
+
 .contactanos__main {
     text-align: center;
 }
@@ -12,23 +14,20 @@
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         font-size: 1rem;
-
     }
 
     textarea {
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         font-size: 1rem;
-
     }
 
     label {
         display: none;
     }
-
-
 }
 
+// Pagina contacto - Desktop
 @media(min-width:1201px) {
 
     .contactanos__main {
@@ -51,8 +50,8 @@
         &__label {
             display: flex;
             flex-direction: column;
-            text-align: center;
-           
+            align-items: stretch;
+
         }
 
         input {
@@ -63,7 +62,7 @@
             color: white
         }
 
-        &__label__button{
+        &__label__button {
             background-color: blueviolet;
         }
     }

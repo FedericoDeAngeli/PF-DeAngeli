@@ -1,12 +1,30 @@
-.conferencias__generales{
-    display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- align-items: center;
+// Pagina Conferencias - Mobile
 
+.conferencias__generales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.conferencias__video p{
-   display: none;
-  }
-  
+.conferencias__video p {
+    display: none;
+}
+
+// Pagina Conferencias - Desktop
+
+@media(min-width:1201px) {
+
+    .conferencias__video {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        background-color: lightpink;
+
+        p {
+            display: block;
+            text-align: justify;
+            font-family: $fuente-principal;
+        }
+    }
+}

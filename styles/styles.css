@@ -14,9 +14,6 @@ h1 {
   color: black;
   text-align: center;
 }
-h1 :hover {
-  transform: scale(10);
-}
 
 h2 {
   font-size: 1.25rem;
@@ -26,6 +23,13 @@ h2 {
 }
 
 h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1em;
+}
+
+h4 {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -91,13 +95,21 @@ ul {
   font-family: "Ubuntu", sans-serif;
   list-style: none;
 }
-ul :hover {
-  transform: scale(1.5);
-  transition-duration: 0.75s;
-}
 ul a {
   text-decoration: none;
   color: black;
+}
+
+ol {
+  font-size: 1rem;
+  padding: 1em;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+}
+
+.navegador__lista li:hover {
+  transform: scale(1.5);
+  transition-duration: 0.75s;
 }
 
 footer {
@@ -203,6 +215,25 @@ img {
     justify-items: center;
   }
 }
+@media (min-width: 1201px) {
+  .noticias {
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .noticias__principal {
+    padding: 1em;
+  }
+  .noticias__ultimas {
+    border-left: solid 0.2em blueviolet;
+    padding: 1em;
+  }
+  .insertos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
 .contactanos__main {
   text-align: center;
 }
@@ -246,7 +277,7 @@ img {
   .formulario__label {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: stretch;
   }
   .formulario input {
     color: white;
@@ -282,34 +313,94 @@ img {
     font-family: "Ubuntu", sans-serif;
   }
 }
-.comida-saludable {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 150px;
-  width: 50%;
-  min-height: 150px;
-  height: 50%;
+.flip-card {
+  padding-top: 2em;
+}
+.flip-card__tarjeta {
+  background-image: url(/img/comida\ sana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.flip-card__tarjeta__frente {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.flip-card__tarjeta__fondo {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.humus {
-  background-color: whitesmoke;
-  padding: 1em;
-  border: solid 0.2em blueviolet;
+@media (min-width: 1201px) {
+  .recetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .flip-card {
+    width: 400px;
+    height: 400px;
+  }
+  .flip-card:hover .flip-card__tarjeta {
+    transform: rotateY(180deg);
+  }
+  .flip-card__tarjeta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .flip-card__tarjeta__frente, .flip-card__tarjeta__fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: 5rem;
+  }
+  .flip-card__tarjeta__frente {
+    background-image: url("/img/comida sana.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .flip-card__tarjeta__frente h3 {
+    font-weight: bold;
+  }
+  .flip-card__tarjeta__fondo {
+    background-color: whitesmoke;
+    color: black;
+    transform: rotateY(180deg);
+    border: solid 0.05em blueviolet;
+  }
 }
-
-.sopa {
-  background-color: whitesmoke;
-  padding: 1em;
-  border: solid 0.2em blueviolet;
-}
-
 .centros-gineco {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1em;
+}
+.centros-gineco p {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .centros-gineco__contenido {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: lightpink;
+  }
+  .centros-gineco__contenido p {
+    display: block;
+    text-align: justify;
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
