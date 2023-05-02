@@ -249,7 +249,7 @@ img {
   }
   .contactanos__main__img {
     visibility: visible;
-    background-image: url(/img/contactus.jpg);
+    background-image: url(../img/contactus.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +313,7 @@ img {
   padding-top: 2em;
 }
 .flip-card__tarjeta {
-  background-image: url(/img/comida-sana.jpg);
+  background-image: url(../img/comida-sana.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -361,7 +361,7 @@ img {
     justify-content: start;
   }
   .flip-card__tarjeta__frente {
-    background-image: url("/img/comida-sana.jpg");
+    background-image: url("../img/comida-sana.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
