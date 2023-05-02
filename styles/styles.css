@@ -26,7 +26,7 @@ h3 {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 h4 {
@@ -215,27 +215,11 @@ img {
     justify-items: center;
   }
 }
-@media (min-width: 1201px) {
-  .noticias {
-    padding-top: 75px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-  }
-  .noticias__principal {
-    padding: 1em;
-  }
-  .noticias__ultimas {
-    border-left: solid 0.2em blueviolet;
-    padding: 1em;
-  }
-  .insertos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-}
 .contactanos__main {
   text-align: center;
+}
+.contactanos__main__img {
+  visibility: hidden;
 }
 
 .formulario {
@@ -260,15 +244,24 @@ img {
 
 @media (min-width: 1201px) {
   .contactanos__main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .contactanos__main__img {
+    visibility: visible;
+    background-image: url(/img/contactus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contactanos__main__img p {
+    visibility: hidden;
   }
   .formulario {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
   .formulario label {
     display: inline;
@@ -277,7 +270,8 @@ img {
   .formulario__label {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: space-between;
+    width: 65%;
   }
   .formulario input {
     color: white;
@@ -287,6 +281,8 @@ img {
   }
   .formulario__label__button {
     background-color: blueviolet;
+    padding: 0.5em;
+    border-radius: 1em;
   }
 }
 .conferencias__generales {
@@ -317,16 +313,18 @@ img {
   padding-top: 2em;
 }
 .flip-card__tarjeta {
-  background-image: url(/img/comida\ sana.jpg);
+  background-image: url(/img/comida-sana.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .flip-card__tarjeta__frente {
   background-color: rgba(255, 255, 255, 0.7);
+  border: solid 0.05em blueviolet;
 }
 .flip-card__tarjeta__fondo {
   background-color: rgba(255, 255, 255, 0.7);
+  border: solid 0.05em blueviolet;
 }
 
 @media (min-width: 1201px) {
@@ -361,16 +359,22 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    font-size: 5rem;
   }
   .flip-card__tarjeta__frente {
-    background-image: url("/img/comida sana.jpg");
+    background-image: url("/img/comida-sana.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
   }
   .flip-card__tarjeta__frente h3 {
     font-weight: bold;
+    padding: 0.1em;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 0.5em;
   }
   .flip-card__tarjeta__fondo {
     background-color: whitesmoke;

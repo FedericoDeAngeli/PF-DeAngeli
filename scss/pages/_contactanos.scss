@@ -2,6 +2,10 @@
 
 .contactanos__main {
     text-align: center;
+
+    &__img {
+        visibility: hidden;
+    }
 }
 
 .formulario {
@@ -25,22 +29,38 @@
     label {
         display: none;
     }
+
 }
 
 // Pagina contacto - Desktop
 @media(min-width:1201px) {
 
     .contactanos__main {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+        display: grid;
+        grid-template-columns: (60% 40%);
+
+
+
+        &__img {
+            visibility: visible;
+            background-image: url(/img/contactus.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+            p {
+                visibility: hidden;
+            }
+
+        }
     }
 
     .formulario {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        align-content: center;
 
         label {
             display: inline;
@@ -50,8 +70,8 @@
         &__label {
             display: flex;
             flex-direction: column;
-            align-items: stretch;
-
+            justify-content: space-between;
+            width: 65%;
         }
 
         input {
@@ -64,6 +84,8 @@
 
         &__label__button {
             background-color: blueviolet;
+            padding: 0.5em;
+            border-radius: 1em;
         }
     }
 }

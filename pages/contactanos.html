@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu:wght@300;700&display=swap"
         rel="stylesheet">
-        
+    <link rel="icon" href="../img/icono.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
     <title>Contactanos | Síndrome de Ovario Poliquístico</title>
 </head>
 
@@ -35,27 +37,30 @@
         <h4>Nuestro grupo de expertos te responderá a la brevedad</h4>
         <div class="contactanos__main">
         <form action="" class="formulario">
-            <div class="formulario__label">
+            <div class="formulario__label" data-aos="zoom-in-up" data-aos-duration="1000">
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
             </div>
-            <div class="formulario__label">
+            <div class="formulario__label" data-aos="zoom-in-up" data-aos-duration="1000">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email">
             </div>
-            <div class="formulario__label">
+            <div class="formulario__label" data-aos="zoom-in-up" data-aos-duration="1000">
                 <label for="celular">Teléfono de contacto</label>
                 <input type="tel" id="celular" name="celular" placeholder="Teléfono">
             </div>
-            <div class="formulario__label">
+            <div class="formulario__label" data-aos="zoom-in-up" data-aos-duration="1000">
                 <label for="texto">Escribinos tu consulta</label>
                 <textarea name="texto" id="texto" cols="30" rows="20" placeholder="Escribinos tu consulta"></textarea>
             </div>
-            <div class="formulario__label">
+            <div class= "animate__animated animate__heartBeat">
                 <label for="submit"></label>
                 <input type="submit" id="submit" value="Enviar" name="button" class="formulario__label__button">
             </div>
         </form>
+        <div class="contactanos__main__img">
+            <p>Contact Us</p>
+        </div>
     </div>
     </main>
 
@@ -73,6 +78,10 @@
         </form>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
