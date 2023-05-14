@@ -33,15 +33,15 @@
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 10px;
-      
+
     }
 
     .flip-card {
 
         width: 400px;
         height: 400px;
-      
-        
+
+
 
         &:hover &__tarjeta {
             transform: rotateY(180deg);
@@ -54,7 +54,7 @@
             text-align: justify;
             transition: transform 1s;
             transform-style: preserve-3d;
-           
+
 
             &__frente,
             &__fondo {
@@ -66,8 +66,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: start;
-                
-                
+
+
 
             }
 
@@ -81,7 +81,7 @@
 
 
 
-                h3 {                    
+                h3 {
                     font-weight: bold;
                     padding: 0.1em;
                     width: 100%;
@@ -89,13 +89,13 @@
                     text-align: center;
                     background-color: rgba(255, 255, 255, 0.7);
                     padding-top: 0.5em;
-                    
+
                 }
             }
 
             &__fondo {
                 background-color: whitesmoke;
-                color: black;
+                color: $color-fuente-principal;
                 transform: rotateY(180deg);
                 border: solid 0.05em blueviolet;
 

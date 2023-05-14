@@ -1,6 +1,6 @@
 // Index - Mobile first
 
-.recetas__encabezado{
+.recetas__encabezado {
     background-color: beige;
     border-style: solid;
     border-color: rgba(255, 20, 216, 0.445);
@@ -8,7 +8,7 @@
     padding: 1em;
 }
 
-.noticias{
+.noticias {
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -22,9 +22,7 @@
 }
 
 .insertos__mapa {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    @extend .insertos__conferencia
 }
 
 // Index - Versión desktop

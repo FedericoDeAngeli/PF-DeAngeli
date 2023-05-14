@@ -21,7 +21,6 @@ header {
 @media(min-width:1201px) {
    header {
       background-color: blueviolet;
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -41,11 +40,11 @@ header {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             column-gap: 1em;
-            
+
 
             li a {
                color: whitesmoke;
-               font-family: 'Ubuntu', sans-serif;
+               font-family: $fuente-principal;
                text-align: end;
                font-size: 1.25rem;
             }

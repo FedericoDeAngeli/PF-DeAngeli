@@ -1,9 +1,6 @@
 // Pagina Centros - Mobile
 .centros-gineco {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex-box;
 
     p {
         display: none;
@@ -15,10 +12,8 @@
 
 
     .centros-gineco__contenido {
-        display: flex;
-        align-items: center;
-        gap: 100px;
-        background-color: lightpink;
+        @include flex-desktop;
+        flex-direction: row-reverse;
 
         p {
             display: block;

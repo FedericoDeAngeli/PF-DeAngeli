@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +44,7 @@ p {
   padding: 1em;
 }
 
+/* Header */
 header {
   background-color: beige;
   border-style: solid;
@@ -89,6 +91,8 @@ header nav ul {
     font-size: 1.25rem;
   }
 }
+
+/* Listas */
 ul {
   font-size: 1rem;
   padding: 0.5em;
@@ -112,6 +116,7 @@ ol {
   transition-duration: 0.75s;
 }
 
+/* Footer */
 footer {
   background-color: rgb(248, 109, 183);
   border-style: solid;
@@ -148,6 +153,8 @@ footer {
     border-radius: 0.5em;
   }
 }
+
+/* Imagenes generales */
 img {
   display: block;
   margin-left: auto;
@@ -157,7 +164,7 @@ img {
   min-height: 150px;
   height: 50%;
 }
-
+/* Animacion en Header */
 @keyframes header-color {
   0% {
     background-color: pink;
@@ -169,6 +176,8 @@ img {
     background-color: aqua;
   }
 }
+
+/* Index */
 .recetas__encabezado {
   background-color: beige;
   border-style: solid;
@@ -184,13 +193,7 @@ img {
   justify-content: space-between;
 }
 
-.insertos__conferencia {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.insertos__mapa {
+.insertos__conferencia, .insertos__mapa {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -215,6 +218,8 @@ img {
     justify-items: center;
   }
 }
+
+/* Pagina contactanos */
 .contactanos__main {
   text-align: center;
 }
@@ -285,6 +290,8 @@ img {
     border-radius: 1em;
   }
 }
+
+/* Pagina conferencias */
 .conferencias__generales {
   display: flex;
   flex-direction: column;
@@ -309,6 +316,8 @@ img {
     font-family: "Ubuntu", sans-serif;
   }
 }
+
+/* Pagina recetas */
 .flip-card {
   padding-top: 2em;
 }
@@ -383,6 +392,8 @@ img {
     border: solid 0.05em blueviolet;
   }
 }
+
+/* Pagina centros */
 .centros-gineco {
   display: flex;
   flex-direction: column;
@@ -399,6 +410,7 @@ img {
     align-items: center;
     gap: 100px;
     background-color: lightpink;
+    flex-direction: row-reverse;
   }
   .centros-gineco__contenido p {
     display: block;

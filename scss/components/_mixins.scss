@@ -1,0 +1,13 @@
+@mixin flex-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin flex-desktop {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: lightpink;
+}
